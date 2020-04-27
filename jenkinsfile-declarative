@@ -1,0 +1,25 @@
+pipeline {
+  agent any
+  
+  stages {
+  
+    stage("preparation") {
+      steps {
+        echo "cloning repository..."
+      }
+    }
+    
+    stage("build") {
+      steps {
+        echo "building application..."
+      }
+    }
+    
+    stage("package") {
+      steps {
+        echo "packaging..."
+      }
+    }
+    
+  }
+}
